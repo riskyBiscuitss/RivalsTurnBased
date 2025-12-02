@@ -1,0 +1,15 @@
+C:\Users\rodri\source\repos\RivalsTurnBased\RivalsTurnBased\bin\Debug\net7.0\RivalsTurnBased.exe
+C:\Users\rodri\source\repos\RivalsTurnBased\RivalsTurnBased\bin\Debug\net7.0\RivalsTurnBased.deps.json
+C:\Users\rodri\source\repos\RivalsTurnBased\RivalsTurnBased\bin\Debug\net7.0\RivalsTurnBased.runtimeconfig.json
+C:\Users\rodri\source\repos\RivalsTurnBased\RivalsTurnBased\bin\Debug\net7.0\RivalsTurnBased.dll
+C:\Users\rodri\source\repos\RivalsTurnBased\RivalsTurnBased\bin\Debug\net7.0\RivalsTurnBased.pdb
+C:\Users\rodri\source\repos\RivalsTurnBased\RivalsTurnBased\obj\Debug\net7.0\RivalsTurnBased.csproj.AssemblyReference.cache
+C:\Users\rodri\source\repos\RivalsTurnBased\RivalsTurnBased\obj\Debug\net7.0\RivalsTurnBased.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rodri\source\repos\RivalsTurnBased\RivalsTurnBased\obj\Debug\net7.0\RivalsTurnBased.AssemblyInfoInputs.cache
+C:\Users\rodri\source\repos\RivalsTurnBased\RivalsTurnBased\obj\Debug\net7.0\RivalsTurnBased.AssemblyInfo.cs
+C:\Users\rodri\source\repos\RivalsTurnBased\RivalsTurnBased\obj\Debug\net7.0\RivalsTurnBased.csproj.CoreCompileInputs.cache
+C:\Users\rodri\source\repos\RivalsTurnBased\RivalsTurnBased\obj\Debug\net7.0\RivalsTurnBased.dll
+C:\Users\rodri\source\repos\RivalsTurnBased\RivalsTurnBased\obj\Debug\net7.0\refint\RivalsTurnBased.dll
+C:\Users\rodri\source\repos\RivalsTurnBased\RivalsTurnBased\obj\Debug\net7.0\RivalsTurnBased.pdb
+C:\Users\rodri\source\repos\RivalsTurnBased\RivalsTurnBased\obj\Debug\net7.0\RivalsTurnBased.genruntimeconfig.cache
+C:\Users\rodri\source\repos\RivalsTurnBased\RivalsTurnBased\obj\Debug\net7.0\ref\RivalsTurnBased.dll
