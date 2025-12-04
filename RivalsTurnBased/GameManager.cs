@@ -68,6 +68,10 @@ namespace RivalsTurnBased
                 player.RosterNumber = rosterNumber;
                 Console.WriteLine(player.RosterNumber + ". " + player);
                 rosterNumber++;
+
+                //CharacterSelect(); change this to return arrays
+                //TeamOne(CharacterSelect()); 
+                //idk if player.rosternumber will be available in TeamOne or else where
             }
         }
 
@@ -124,13 +128,19 @@ namespace RivalsTurnBased
                 if (firstArr.All(x => x != null))
                 {
                     isFirstTeam = false;
-                    foreach (int j in selectedArr)
-                    {
-                        selectedArr[j] = null;
-                    }
+                    Array.Clear(selectedArr, 0, selectedArr.Length);
+                    i = 0;
                 }
             }
-            TeamOne(firstArr);
+            foreach (int k in firstArr)
+            {
+                Console.WriteLine(k);
+            }
+            foreach (int m in secondArr)
+            {
+                Console.WriteLine(m);
+            }
+            //TeamOne(firstArr);
         }
 
         public void TeamOne(int?[] chosenCharacters)
