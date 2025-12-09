@@ -6,7 +6,7 @@
         {
             GameManager gm = new GameManager();
             gm.DisplayRoster();
-            gm.CharacterSelect();
+            //gm.CharacterSelect();
 
 
 

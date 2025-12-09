@@ -10,22 +10,7 @@ namespace RivalsTurnBased
             int playerNumber = 1;
             Console.WriteLine("Player " + playerNumber + " select your team by the corresponding number and press Enter: ");
 
-            //bool firstTeam = true;
-            //for(int i = 0; i < 12; i++)
-            //if(firstTeam) currentTeam = teamOne
-            //else currentTeam  = teamTwo;
-            //switch characterSelected
-            //case 1: currentTeam(character)
-            //teamOne[0] = new DrStrange();
-            //cw display team one
-            //Team one : teamOne[0] \n etc.
-            //if (i >  6) firstTeam = false;
 
-            //new idea
-            //int[] teamOnePicks = new int[6];
-            //for (int i = 0; i < 7; i++)
-            //switch characterSelected:
-            //case 1: teamOnePicks[i] = 1;
 
         }
 
@@ -47,6 +32,7 @@ namespace RivalsTurnBased
             List<Character> sortedList = list.OrderBy(t => t.Role).ToList();
             bool displayVanguard = false, displayDuelist = false, displayStrategist = false;
             int rosterNumber = 1;
+
             foreach (Character player in sortedList)
             {
 
@@ -66,22 +52,26 @@ namespace RivalsTurnBased
                     displayStrategist = true;
                 }
                 player.RosterNumber = rosterNumber;
+
                 Console.WriteLine(player.RosterNumber + ". " + player);
                 rosterNumber++;
 
-                //CharacterSelect(); change this to return arrays
-                //TeamOne(CharacterSelect()); 
+                //TeamOne(teamOnePicks, sortedList); 
                 //idk if player.rosternumber will be available in TeamOne or else where
             }
+            var (teamOnePicks, teamTwoPicks) = CharacterSelect();
+            TeamOne teamOne = new TeamOne(teamOnePicks, sortedList);
         }
 
-        public void CharacterSelect()
+        public static (int?[] teamOnePicks, int?[] teamTwoPicks) CharacterSelect()
         {
             int selectedNumber;
             bool isFirstTeam = true;
             int?[] firstArr = new int?[6];
             int?[] secondArr = new int?[6];
             int?[] selectedArr = new int?[6];
+            int?[] teamOnePicks = new int?[6];
+            int?[] teamTwoPicks = new int?[6];
             Console.WriteLine("Select a character from the corresponding number: ");
 
             int i = 0;
@@ -128,33 +118,24 @@ namespace RivalsTurnBased
                 if (firstArr.All(x => x != null))
                 {
                     isFirstTeam = false;
+                    teamOnePicks = firstArr.Select(x => x).ToArray();
                     Array.Clear(selectedArr, 0, selectedArr.Length);
                     i = 0;
                 }
             }
-            foreach (int k in firstArr)
-            {
-                Console.WriteLine(k);
-            }
-            foreach (int m in secondArr)
-            {
-                Console.WriteLine(m);
-            }
+            teamTwoPicks = secondArr.Select(x => x).ToArray();
+            //foreach (int k in firstArr)
+            //{
+            //    Console.WriteLine(k);
+            //}
+            //foreach (int m in secondArr)
+            //{
+            //    Console.WriteLine(m);
+            //}
             //TeamOne(firstArr);
+            return (teamOnePicks, teamTwoPicks);
         }
 
-        public void TeamOne(int?[] chosenCharacters)
-        {
-            Character[] teamOne = new Character[6];
 
-
-
-        }
-
-        public void TeamTwo()
-        {
-            Character[] teamTwo = new Character[6];
-
-        }
     }
 }
