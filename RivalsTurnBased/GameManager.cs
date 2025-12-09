@@ -10,8 +10,6 @@ namespace RivalsTurnBased
             int playerNumber = 1;
             Console.WriteLine("Player " + playerNumber + " select your team by the corresponding number and press Enter: ");
 
-
-
         }
 
         public void DisplayRoster()
@@ -61,6 +59,7 @@ namespace RivalsTurnBased
             }
             var (teamOnePicks, teamTwoPicks) = CharacterSelect();
             TeamOne teamOne = new TeamOne(teamOnePicks, sortedList);
+            TeamTwo teamTwo = new TeamTwo(teamTwoPicks, sortedList);
         }
 
         public static (int?[] teamOnePicks, int?[] teamTwoPicks) CharacterSelect()
